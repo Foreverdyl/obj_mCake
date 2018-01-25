@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/shopping_cart.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body>
+<!--页面头部-->
+<header id="header"></header>
+
+<!--主体-->
+<div class="main">
+    <div id="main">
+        <div class="main_title">购物车</div>
+        <div class="main_orderList">
+            <!--导航菜单-->
+            <ul class="main_nav clear">
+                <li class="active"><p>我的购物车</p></li>
+                <li class="active"><span>&gt;</span></li>
+                <li><p>填写订单信息</p></li>
+                <li><span>&gt;</span></li>
+                <li><p>完成订单</p></li>
+            </ul>
+            <!--我的购物车-->
+            <div class="myCart">
+                <!--已选商品列表-->
+                <table class="main_list">
+                    <thead>
+                        <tr>
+                            <th colspan="2">商品信息</th>
+                            <th>规格</th>
+                            <th>单价（元）</th>
+                            <th>数量</th>
+                            <th>金额</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--<tr>-->
+                            <!--<td><i></i><sup class="active"></sup></td>-->
+                            <!--<td>-->
+                                <!--<a href="product_details.html?pid=1"><img src="Images/proInfo/1_1.jpg"/></a>-->
+                                <!--<div>-->
+                                    <!--<a href="product_details.html?pid=1">Carré Blanc</a>-->
+                                    <!--<p>简</p>-->
+                                    <!--<br/>-->
+                                    <!--<p>赠品：标配餐具10份 生日蜡烛1支</p>-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <!--<td>2磅<p>适合4-7人食用</p></td>-->
+                            <!--<td>￥318.00</td>-->
+                            <!--<td>-->
+                                <!--<span>-</span>-->
+                                <!--<input type="text" value="1"/>-->
+                                <!--<span>+</span>-->
+                            <!--</td>-->
+                            <!--<td>￥318.00</td>-->
+                            <!--<td>-->
+                                <!--<p class="">删除</p>&lt;!&ndash;del_pro&ndash;&gt;-->
+                                <!--<p><a href="javascript:;">确定</a><a href="javascript:;">取消</a></p>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td colspan="7"><i></i><sup class="active"></sup><span>全选</span></td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+                <!--商品结算-->
+                <div class="total">
+                    <div>
+                        <span>已选择<i>2</i>款商品</span>
+                        <span>合计（不含运费）：<b>¥346.00</b></span>
+                    </div>
+                    <p>
+                        <a href="product.html">继续购物</a>
+                        <a href="javascript:;">结算</a>
+                    </p>
+                </div>
+            </div>
+            <!--订单信息-->
+            <div class="orderInfo hidelist">
+                <ul class="order-msg">
+                    <li>
+                        <p>选择收货地址</p>
+                        <ul class="clear">
+                            <li class="lf">使用新地址</li>
+                            <li class="lf">选择自提点</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>选择配送时间</p>
+                        <!--日期时间选择-->
+                        <div></div>
+                        <!--注意事项-->
+                        <span>*配送时间:10:00~22:00,</span>
+                        <span>配送当天不可修改</span>
+                        <p>*当天21:30至次日9:00的订单,最早配送时间为次日14:00</p>
+                        <p>*我们将优先根据您的选择时间配送,实际配送时间会有前后30分钟误差</p>
+                    </li>
+                    <li>
+                        <p>选择支付方式</p>
+                        <ul>
+                            <li>
+                                <div class="selected-zf"></div>
+                                <div class="selected-k"></div>
+                                <span>在线支付</span>
+                                <span>(微信,支付宝,银行卡)</span>
+                            </li>
+                            <li>
+                                <div></div>
+                                <div class="selected-k"></div>
+                                <span>货到付款</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>订单留言</p>
+                        <div class="selected-msg"></div>
+                        <div class="selected-ly"></div>
+                        <span>需要留言</span>
+                    </li>
+                    <li>
+                        <span>${}件商品,总商品金额:</span>
+                        <span>¥${}</span>
+                    </li>
+                    <li>
+                        <span>应付总额:</span>
+                        <span class="all-money">¥${}</span>
+                        <p>配送至:${},&nbsp;&nbsp;收货人:${}</p>
+                    </li>
+                    <li class="clear"><span class="order-btn rt" href="#">提交订单</span></li>
+                    <li><a href="#" class="rt back-cart">返回购物车</a></li>
+                </ul>
+            </div>
+            <!--完成订单-->
+        </div>
+    </div>
+</div>
+<!--日期选择-->
+<div class="selected-date-bg hidelist hade">
+    <div class="selected-date">
+        <div class="close-icon">X</div>
+        <ul>
+            <li>
+                <div class="date-list">
+                    <ul class="clear">
+                        <li class="lf date-selected">
+                            <p>12月26日</p>
+                            <p>星期二</p>
+                        </li>
+                        <li class="lf">
+                            <p>12月27日</p>
+                            <p>星期三</p>
+                        </li>
+                        <li class="lf">
+                            <p>12月28日</p>
+                            <p>星期四</p>
+                        </li>
+                        <li class="lf">
+                            <p>12月29日</p>
+                            <p>星期五</p>
+                        </li>
+                        <li class="lf">
+                            <p>12月30日</p>
+                            <p>星期六</p>
+                        </li>
+                        <li class="lf">
+                            <p>12月31日</p>
+                            <p>星期日</p>
+                        </li>
+                        <li class="lf">
+                            <p>1月1日</p>
+                            <p>星期一</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="clear">
+                <div class="date-time">
+                    <div>
+                        <p class="lf">配送时间</p>
+                        <div class="list-btn1"></div>
+                        <p class="lf date-time-num">上午</p>
+                        <ul class="date-time-ul1">
+                            <li class="date-selected">上午</li>
+                            <li>下午</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="list-btn2"></div>
+                        <p class="lf date-time-num">10</p>
+                        <ul class="date-time-ul2">
+                            <li class="date-selected">10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                        </ul>
+                    </div>
+                    <p class="lf">时</p>
+                    <div>
+                        <div class="list-btn3"></div>
+                        <p class="lf date-time-num">00</p>
+                        <ul class="date-time-ul3">
+                            <li class="date-selected">00</li>
+                            <li>15</li>
+                            <li>30</li>
+                            <li>45</li>
+                        </ul>
+                    </div>
+                    <p class="lf">分</p>
+                </div>
+            </li>
+            <li class="date-btn">
+                <p>确定</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--页面底部-->
+<footer id="footer"></footer>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/shopping_cart.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/*页面主体*/
+/*上面图片+文字*/
+#main{
+    margin:50px 0;
+    text-align:center;
+}
+#main div.main_header p{
+    font-size:20px;
+    box-shadow:0 0 90px 20px rgba(255,208,206,0.9);
+    padding:12px;
+    border-radius:15px;
+}
+/*主体内容*/
+
+/*商品*/
+div.product-main{
+    width:1280px;
+    display:flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    margin:50px 0;
+}
+
+div.product-main>div>div{
+    font-size: 14px;
+    line-height:130%;
+}
+div.product-one>a>img{
+    width:236px;
+    border-radius:10px;
+    transition:all .5s linear;
+}
+div.product-one{
+    width:236px;
+    margin:26px 10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 7px #999;
+}
+div.product-one>div{
+    height:30px;
+    width:236px;
+    padding:16px 0;
+    line-height:100%;
+    background:rgba(0,0,0,0.4);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top:236px;
+    transition:all .5s linear;
+}
+div.product-one>div a{
+    font-size:12px;
+    margin:10px 0 0 20px;
+    color:#fff;
+}
+div.product-one>div img{
+    margin:2px 20px;
+    width:25px;
+    height:20px;
+}
+div.product-one>div span{
+    display:inline-block;
+    color:transparent;
+    width:25px;
+    height:25px;
+    margin:auto 20px;
+}
+div.product-one>a>img:hover{
+    transform:scale(1.2);
+}
+div.product-main>div{
+    position:relative;
+}
+.pro-titile{
+    padding-top:10px;
+}
+div.product-main>div>img{
+    width:30px;
+    position:absolute;
+    left:24px;
+    bottom: 0;;
+}
+/*加减号*/
+.product-main>div{
+    line-height:100%;
+}
+.product-main div p.account{
+    margin-top:15px;
+}
+.product-main div p.account>span{
+    font-size:12px;
+}
+.product-main div p.account>button{
+    width:22px;
+    height:20px;
+    text-align:center;
+    border:1px solid #ddd;
+    vertical-align:middle;
+    font-size:8px;
+    font-weight:bold;
+    line-height:100%;
+    background:#F1F5F6;
+}
+.product-main div p.account>input{
+    width:24px;
+    height:20px;
+    border:1px solid #ddd;
+    text-align:center;
+    font-size:16px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+
+
+/*右侧导航条*/
+#flavor_lift{
+    width:100px;
+    position:fixed;
+    top:130px;
+    right:20px;
+    padding:10px 0;
+}
+/*导航条->文字*/
+#flavor_lift b{
+    display:inline-block;
+    width:80px;
+    padding:5px 10px;
+    color:rgba(0,0,0,0.6);
+    background:transparent;
+    border-radius:8px;
+    cursor:pointer;
+    border-bottom:2px solid #ddd;
+    margin-bottom:5px;
+}
+#flavor_lift b:hover{
+    background:rgba(254,161,161,0.6);
+}
+/*导航条->列表*/
+#flavor_lift ul li{
+    padding:5px 15px 5px 0;
+}
+#flavor_lift ul li a{
+    display:inline-block;
+    width:85px;
+}
+#flavor_lift ul li:hover a{
+    background:url(../Images/index/icon.png) no-repeat 60px -217px;
+}

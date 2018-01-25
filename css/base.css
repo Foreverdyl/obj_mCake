@@ -1,0 +1,60 @@
+/*通用样式*/
+body{
+    font:12px 'Microsoft YaHei','微软雅黑','黑体','SimHei';
+    color:#5f3f3f;
+    margin:0;
+    padding:0;
+    background:#fff;
+    text-align:center;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    vertical-align:middle;
+    /*vertical-align:bottom;*/
+}
+input{
+    outline:none;
+}
+a{
+    color:#767676;
+    text-decoration:none;
+}
+a:hover{
+    color:#AF906A;
+    text-decoration:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.main{
+    width:1280px;
+    margin:0 auto;
+}
+/*div{*/
+    /*border-collapse:collapse*/
+/*}*/
+.fade{
+    opacity:0;
+    transition:all .5s linear;
+}
+.in{
+    border-radius:10px;
+    opacity:1;
+}
+.fixed_nav{
+    height:100px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    transition: all 0.5s linear;
+}

@@ -1,0 +1,128 @@
+#main{
+    margin:80px;
+    padding:0 100px;
+}
+/*左*/
+#main>div{
+    width:50%;
+    margin:10px 50px 10px 30px;
+    text-align:left;
+}
+/*会员注册 文字*/
+#main>div h3{
+    font-size:18px;
+    color:#767676;
+    padding:0 0 8px 5px;
+    border-bottom:1px solid #E0E0E0;
+    width:330px;
+}
+/*列表项*/
+#main>div li{
+    margin:10px 0;
+    line-height:45px;
+}
+#main>div li input{
+    width:240px;
+    padding:5px 5px 5px 45px;
+    height:35px;
+    line-height:35px;
+    background:url(../Images/index/icon.png) no-repeat #f0f0f0;
+    color:#767676;
+    font-size:15px;
+    border:none;
+    border-radius:2px;
+}
+#main>div li:first-child input{
+    background-position:-356px -289px;
+}
+#main>div li:nth-child(2) input{
+    background-position:-356px -337px;
+}
+#main>div li:nth-child(3) input{
+    background-position:-356px -388px;
+}
+/*验证码输入框*/
+#main>div li:nth-child(4) input{
+    background-position:-356px -437px;
+    width:125px;
+}
+/*验证码图片*/
+#main>div li img{
+    width:112px;
+    height:43px;
+    position:relative;
+    top:-2px;
+    cursor:pointer;
+}
+/*后面提示文字*/
+#main>div li span{
+    display:inline-block;
+    margin-left:5px;
+    color:#999;
+}
+/*同意协议*/
+#main>div li.agreement{
+    position:relative;
+}
+#main>div li.agreement i{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background:#e6e6e6;
+    position:relative;
+    vertical-align:middle;
+}
+#main>div li.agreement sup{
+    width:40px;
+    height:35px;
+    position:absolute;
+    left:-2px;
+    top:12px;
+}
+#main>div li.agreement sup.active{
+    background:url(../Images/shopping_cart/ok.png) no-repeat -3px -278px;
+}
+#main>div li.agreement a{
+    display:inline-block;
+    margin-left:30px;
+}
+/*注册按钮*/
+#main>div ul>li:last-child input{
+    display:inline-block;
+    margin:0 45px;
+    width:190px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    background:#B0916A;
+    border-radius:5px;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:0;
+}
+/*右*/
+#main>a{
+    display:block;
+    float:right;
+    margin:100px 60px;
+}
+#main>a i{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:url(../Images/index/icon.png) no-repeat -203px -404px;
+}
+#main>a p{
+    font-size:14px;
+}
+#main>a p b{
+    font-weight:normal;
+    color:#a5002f;
+}
+#main>a p b:hover{
+    color:#B0916A;
+}
+#main>a:hover i{
+    background-position:-203px -443px;
+}

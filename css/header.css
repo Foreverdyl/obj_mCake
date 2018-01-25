@@ -1,0 +1,424 @@
+/*大体样式*/
+#header{
+    min-height:100px;
+    /*overflow:hidden;*/
+    box-shadow:3px 3px 3px #e1e1e1;
+    background:#fff;
+}
+#header .header_top{
+    height:30px;
+    border-bottom:1px solid #eaeaea;
+}
+#header .header_top .main{
+    height:100px;
+    padding:0 10px;
+}
+/*logo*/
+#header .top_logo{
+    float:left;
+    padding:1px;
+}
+/*右侧登录列表样式*/
+#header .list_rt{
+    float:right;
+    margin-right:20px;
+}
+#header .list_rt li{
+    float:left;
+    line-height:30px;
+    padding:0 10px;
+}
+#header .list_rt li a,
+#header .list_rt li img,
+#header .list_rt li span{
+    display:inline-block;
+    line-height:30px;
+}
+#welcomeList li:first-child img{
+    margin-right:3px;
+}
+#welcomeList li:nth-child(2) img{
+    width:26px;
+    height:26px;
+    margin:0 3px;
+    position:relative;
+    top:-1px;
+}
+#welcomeList{
+    display:none;
+}
+/*右侧搜索框*/
+#search_box{
+    float:right;
+    width:150px;
+    height:30px;
+    margin-right:20px;
+    position:relative;
+    text-align:center;
+}
+#search_box input{
+    width:120px;
+    height:18px;
+    border:0;
+    border-bottom:1px solid #d1d1d1;
+    position:relative;
+    top:4px;
+    margin-right:3px;
+}
+@keyframes glow{
+    0%{
+        border-color:#393;
+        box-shadow:0 0 5px rgba(176,145,106,.2),inset 0 0 5px rgba(176,145,106,.1),0 2px 0 #d1d1d1;
+    }
+    100%{
+        border-color:#d1d1d1;
+        box-shadow:0 0 20px rgba(176,145,106,.6),inset 0 0 10px rgba(176,145,106,.4),0 2px 0 #d1d1d1;
+    }
+}
+#search_box input:focus{
+    animation:glow 800ms ease-out infinite alternate;
+    background:linear-gradient(#fff,#F1F4F6);
+    border-color:#393;
+    box-shadow:0 0 4px rgba(176,145,106,.2),inset 0 0 4px rgba(176,145,106,.1),0 2px 0 #d1d1d1;
+    color:#B0916A;
+    outline:none;
+}
+#search_box img{
+    width:18px;
+    cursor:pointer;
+    position:relative;
+    top:5px;
+}
+/*下拉菜单通用样式 绝对定位*/
+.list_abso{
+    position:absolute;
+    display:none;
+    overflow:hidden;
+}
+.list_abso li{
+    cursor:pointer;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    border-bottom:1px solid #ddd;
+}
+/*下拉菜单通用样式结束*/
+#search_box ul{
+    width:115px;
+    min-height:55px;
+    background:#CBB79D;
+    border:1px solid #ccc;
+    top:24px;
+    left:3px;
+    border-radius:3px;
+    box-shadow:1px 2px 1px rgba(0,0,0,.2);
+}
+#search_box ul li{
+    padding:3px 5px;
+    text-align:left;
+}
+#search_box ul li:hover{
+    color:#AF906A;
+}
+#search_box:hover ul{
+    display:block;
+}
+/*主体菜单*/
+#header .top_nav{
+    float:left;
+    width:78%;
+    height:70px;
+}
+#header .top_nav>ul{
+    width:690px;
+    float:left;
+}
+#header .top_nav>ul li{
+    float:left;
+    width:150px;
+    height:50px;
+    margin-top:15px;
+    padding:0 10px 2px;
+    border-right:1px solid #ECECEC;
+    border-bottom:3px solid transparent;
+    font-size:14px;
+    text-align:center;
+    cursor:pointer;
+    transition:all .3s linear;
+}
+#header .top_nav>ul li:hover{
+    border-bottom-color:#7A9095;
+    font-weight:bold;
+}
+#header .top_nav>ul li p{
+    font-size:16px;
+}
+/*配送电话*/
+#header .top_nav .contact_tel{
+    width:160px;
+    float:left;
+    margin:4px 0 0 20px;
+}
+#header .top_nav .contact_tel p{
+    padding-left:30px;
+    height:26px;
+    line-height:26px;
+}
+#header .top_nav .contact_tel p:first-child{
+    background:url(../Images/header/tel.png) no-repeat;
+    margin-top:10px;
+}
+#header .top_nav .contact_tel p:last-child{
+    background:url(../Images/header/slogan.png) no-repeat;
+}
+#header .top_nav .contact_tel p span{
+    color:#AF906A;
+}
+/*城市列表*/
+#header .top_nav .sel_city{
+    margin:20px 0;
+    width:100px;
+    float:left;
+    position:relative;
+}
+#header .top_nav .sel_city p{
+    font-size:16px;
+    cursor:pointer;
+    padding-left:30px;
+    height:26px;
+    line-height:26px;
+    background:url(../Images/header/gps.png) no-repeat;
+    position:relative;
+}
+#header .top_nav .sel_city ul{
+    width:70px;
+    height:80px;
+    top:25px;
+    left:17px;
+}
+#header .top_nav .sel_city li{
+    width:70px;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    border-radius:5px;
+}
+#header .top_nav .sel_city li:hover{
+    background:#eee;
+}
+#header .top_nav .sel_city:hover ul{
+    display:block;
+}
+
+/*雪*/
+.snow{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation-name: snow;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0) translate(0, 0) scale(.2);
+}
+.snow1{
+    left: 10%;
+    transform: translate(1vh);
+}
+.snow2{
+    left: 20%;
+    transform: translate(1.5vh);
+    animation-delay: 200ms;
+}
+.snow3{
+    left: 30%;
+    transform: translate(2vh);
+    animation-delay: 520ms;
+}
+.snow4{
+    left: 40%;
+    transform: translate(2.5vh);
+    animation-delay: 999ms;
+}
+.snow5{
+    left: 50%;
+    transform: translate(3vh);
+    animation-delay: 150ms;
+}
+.snow6{
+    left: 60%;
+    transform: translate(3.5vh);
+    animation-delay: 400ms;
+}
+.snow7{
+    left: 70%;
+    transform: translate(4vh);
+    animation-delay: 1550ms;
+}
+.snow8{
+    left: 80%;
+    transform: translate(4.5vh);
+    animation-delay: 655ms;
+}
+.snow9{
+    left: 86%;
+    transform: translate(5vh);
+    animation-delay: 250ms;
+}
+.snow10{
+    left: 55%;
+    transform: translate(5.5vh);
+    animation-delay: 600ms;
+}
+.snow11{
+    left: 15%;
+    transform: translate(6vh);
+    animation-delay: 2000ms;
+}
+.snow12{
+    left: 25%;
+    transform: translate(6.5vh);
+    animation-delay: 2400ms;
+}
+.snow13{
+    left: 35%;
+    transform: translate(7vh);
+    animation-delay: 2999ms;
+}
+.snow14{
+    left: 45%;
+    transform: translate(7.5vh);
+    animation-delay: 1300ms;
+}
+.snow15{
+    left: 55%;
+    transform: translate(8vh);
+    animation-delay: 2150ms;
+}
+.snow16 {
+    left: 65%;
+    transform: translate(8.5vh);
+    animation-delay: 2140ms;
+}
+.snow17{
+    left: 75%;
+    transform: translate(5.5vh);
+    animation-delay: 2600ms;
+}
+.snow18{
+    left: 84%;
+    transform: translate(5.5vh);
+    animation-delay: 2666ms;
+}
+.snow19{
+    left: 89%;
+    transform: translate(5.5vh);
+    animation-delay: 2200ms;
+}
+.snow20{
+    left: 10%;
+    transform: translate(5.5vh);
+    animation-delay: 2400ms;
+}
+.snow21{
+    left: 20%;
+    transform: translate(5.5vh);
+    animation-delay: 3200ms;
+}
+.snow22{
+    left: 30%;
+    transform: translate(5.5vh);
+    animation-delay: 3500ms;
+}
+.snow24{
+    left: 40%;
+    transform: translate(2.5vh);
+    animation-delay: 3999ms;
+}
+.snow25{
+    left: 50%;
+    transform: translate(3vh);
+    animation-delay: 3150ms;
+}
+.snow26{
+    left: 60%;
+    transform: translate(3.5vh);
+    animation-delay: 3400ms;
+}
+.snow27{
+    left: 70%;
+    transform: translate(4vh);
+    animation-delay: 4550ms;
+}
+
+.snow28{
+    left: 79%;
+    transform: translate(4.5vh);
+    animation-delay: 3655ms;
+}
+.snow29{
+    left: 86%;
+    transform: translate(5vh);
+    animation-delay: 3250ms;
+}
+.snow30{
+    left: 55%;
+    transform: translate(5.5vh);
+    animation-delay: 4600ms;
+}
+.snow31{
+    left: 15%;
+    transform: translate(6vh);
+    animation-delay: 6000ms;
+}
+.snow32{
+    left: 25%;
+    transform: translate(6.5vh);
+    animation-delay: 6400ms;
+}
+.snow33{
+    left: 35%;
+    transform: translate(7vh);
+    animation-delay: 6999ms;
+}
+.snow34{
+    left: 45%;
+    transform: translate(7.5vh);
+    animation-delay: 5300ms;
+}
+.snow35{
+    left: 55%;
+    transform: translate(8vh);
+    animation-delay: 6150ms;
+}
+.snow36{
+    left: 65%;
+    transform: translate(8.5vh);
+    animation-delay: 6140ms;
+}
+.snow37{
+    left: 75%;
+    transform: translate(5.5vh);
+    animation-delay: 6600ms;
+}
+.snow38{
+    left: 83%;
+    transform: translate(5.5vh);
+    animation-delay: 6666ms;
+}
+.snow39{
+    left: 89%;
+    transform: translate(5.5vh);
+    animation-delay: 6200ms;
+}
+@keyframes snow{
+    10%{ opacity: 1 }
+    70%{ opacity: 1 }
+    100%{ transform: translate3d(0, 120vh, 0) scale(1.2);
+        opacity: 0
+    }
+}

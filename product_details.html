@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/product_details.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body>
+    <!--页面头部-->
+    <header id="header"></header>
+    <!--body-->
+    <div id="product-details">
+        <div id="preview">
+            <ul id="icon_list">
+                <!--<li class="i1">-->
+                    <!--<img src="img/product/1_1.jpg" data-md="${pic.md}" data-lg="${pic.lg}">-->
+                <!--</li>-->
+            </ul>
+            <div id="mediumDiv">
+                <!--<img id="mImg" src="img/product/1_1.jpg">-->
+                <!--<div id="note">-->
+                    <!--<span>-->
+                        <!--En respectant le processus traditionnel aux chocolats belges classiques, mélange sec et<br/><br/>沿袭比利时巧克力的经典，干湿研拌的传统工艺降低酸味，追求其芬芳，质感，浓度。-->
+                    <!--</span>-->
+                <!--</div>-->
+                <!--<div id="mask"></div>-->
+                <!--<div id="superMask"></div>-->
+            </div>
+            <div id="largeDiv"></div>
+        </div>
+
+        <!--3.2 右上 ：文字信息 #show-details width:490px-->
+        <div id="show-details">
+            <div id="detail-title">
+                <span>${p.etitle}</span>
+                <span>${p.ctitle}</span>
+            </div>
+            <div id="details-price">
+                <span>¥${p.price}</span>
+            </div>
+            <ul id="weight">
+                <li class="lf">
+                    <div></div>
+                    1磅
+                </li>
+                <li class="lf"><div></div>2磅</li>
+                <li class="lf"><div></div>3磅</li>
+                <li class="lf"><div></div>5磅</li>
+            </ul>
+            <div id="prompt">
+                <span>适合${p.num}人食用</span>
+                <span>SIZE:${p.msize}</span>
+                <p>需提前5小时预订</p>
+                <div>
+                    <ul class="lf">
+                        <li><label>Base口味基底</label></li>
+                        <li><label>Texture口感</label><br/></li>
+                    </ul>
+                    <ul >
+                        <li><span>Mousse</span></li>
+                        <li><span>入口即化</span><br/></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 数量 -->
+            <div id="cake_num">
+                <span class="lf">数量</span>
+                <dl>
+                    <dd class="lf">-</dd>
+                    <dt>
+                        <input type="text" value="1" class="lf">
+                    </dt>
+                    <dd class="lf">+</dd>
+                </dl>
+                <table class="clear"></table>
+            </div>
+            <!-- 购买部分 -->
+            <div class="shops">
+                <ul>
+                    <li class="lf">立即购买</li>
+                    <li class="lf">加入购物车</li>
+                </ul>
+            </div>
+            <!--原材料-->
+            <div id="material">
+                <p>Best Ingredient</p>
+                <p>优质原材料</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Beatae blanditiis deleniti dignissimos eligendi et, eum fuga, illo ipsa,
+                    magnam non numquam quo rerum similique sunt tempora tempore vel voluptatum! Debitis.
+                </p>
+            </div>
+        </div>
+        <!--商品详情-->
+        <div id="detail">
+            <div>
+                <img src="img/product/000.png" alt=""/>
+                <span>Blanche est un nom de fille fraiçaise, qui présente le coleur blanc et la purtée, Lorsqu'il a rencontré le chevalier noir，ouvrir une nouvelle aventure française.
+                <br/>“布兰奇”是属于美丽浪漫法国女孩的名字，代表“白色，纯洁”，当与黑色骑士相遇，注定命运交织，绽放花朵，勾勒最美的童话，开启全新的法式冒险之旅。
+                </span>
+            </div>
+            <div id="detail-img"><img src="img/product/1_4.jpg" alt=""/></div>
+        </div>
+        <!--3.3 下 ：为你推荐 #recommend -->
+        <div id="recommend">
+            <img src="img/product/det_hot.jpg" alt=""/>
+            <p>销量排行榜</p>
+            <div class="main">
+                <div id="demo" class="clear">
+                    <div id="demo1">
+                        <div class="product-one lf">
+                            <a href="#"><img src="img/product/2_1.jpg" alt=""/></a>
+                            <div>
+                                <p>www</p>
+                            </div>
+                            <a href="#">
+                                <span>Napoléon aux myrtilles</span>
+                                <p>2磅/298RMB</p>
+                            </a>
+                        </div>
+                        <div class="product-one lf">
+                            <a href="#"><img src="img/product/2_1.jpg" alt=""/></a>
+                            <div>
+                                <p>www</p>
+                            </div>
+                        </div>
+                        <div class="product-one lf">
+                            <a href="#"><img src="img/product/2_1.jpg" alt=""/></a>
+                            <div>
+                                <p>www</p>
+                            </div>
+                        </div>
+                        <div class="product-one lf">
+                            <a href="#"><img src="img/product/2_1.jpg" alt=""/></a>
+                            <div>
+                                <p>www</p>
+                            </div>
+                        </div>
+                        <div class="product-one lf">
+                            <a href="#"><img src="img/product/2_1.jpg" alt=""/></a>
+                            <div>
+                                <p>www</p>
+                            </div>
+                        </div>
+                        <table class="clear"></table>
+                    </div>
+                    <!--左右方向按钮-->
+                    <a href="javascript:;" class="ck-slide ck-left" data-move="left"></a>
+                    <a href="javascript:;" class="ck-slide ck-right" data-move="right"></a>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <!--页面底部    -->
+    <footer id="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/product_details.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

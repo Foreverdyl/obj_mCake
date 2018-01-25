@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body>
+
+<!--页面头部-->
+<header id="header"></header>
+
+<!--页面主体-->
+<div class="main">
+    <div id="main" class="clear">
+        <!--左:文字-->
+        <div class="login_text">
+            <p>Veuillez signer</p>
+            <p>Inviter des amis<br/>peut être mystérieux.</p>
+            <p>Vous avez besoin de remplir le numéro de téléphone de votre login</p>
+        </div>
+        <!--右:登录框-->
+        <div class="login_list">
+            <!--登录方式-->
+            <p>
+                <span class="active">普通登录</span>
+                <i></i>
+                <span>二维码登录</span>
+            </p>
+            <!--普通登录 432*300-->
+            <ul class="">
+                <li>
+                    <input type="text" id="uname" placeholder="请输入登录用户名" required/>
+                    <span></span><!--用户名不能为空/用户名有误,请检查后重填-->
+                </li>
+                <li>
+                    <input type="password" id="upwd" placeholder="请输入密码" required/>
+                    <span></span><!--密码不能为空/密码有误,请检查后重填-->
+                </li>
+                <li>
+                    <input type="text" id="yzm" placeholder="验证码" required/>
+                    <img id="setYzm" title="看不清,换一张" src="data/03_code_gg.php"/>
+                    <span></span>
+                </li>
+                <li>
+                    <input type="button" value="登 录" id="btnLogin"/>
+                    <a href="javascript:;">忘记密码 ?</a>
+                </li>
+                <li class="other">
+                    <p>提示 : 还不是会员 ?</p>
+                    <a href="register.html">立即注册</a>
+                </li>
+                <li class="other">
+                    <p>使用合作网站帐号登录</p>
+                    <a href="javascript:;">
+                        <img src="Images/login/weibo.png" alt="图片出错了~"/>
+                        <img src="Images/login/zfb.png" alt="图片出错了~"/>
+                    </a>
+                </li>
+            </ul>
+            <!--二维码登录 432*230-->
+            <div class="hide">
+                <img class="" src="img/product/footer03.jpg" alt="图片出错了~"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--页面底部-->
+<footer id="footer"></footer>
+
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/login.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

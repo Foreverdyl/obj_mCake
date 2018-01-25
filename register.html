@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body>
+
+<!--页面头部-->
+<header id="header"></header>
+
+<!--页面主体-->
+<div class="main">
+    <div id="main" class="clear">
+        <!--左-->
+        <div class="lf">
+            <h3>会员注册</h3>
+            <ul>
+                <li>
+                    <input type="text" id="uname" placeholder="请输入用户名" required/>
+                    <span>6~12位字母或数字组成</span><!--用户名不能为空--><!--该用户名已被占用-->
+                </li>
+                <li>
+                    <input type="password" id="upwd" placeholder="请输入密码" required/>
+                    <span>6~12位字母或数字组成</span><!--密码不能为空-->
+                </li>
+                <li>
+                    <input type="password" id="Pwds" placeholder="请重复输入密码" required/>
+                    <span></span><!--密码不一致请确认-->
+                </li>
+                <li>
+                    <input type="text" id="yzm" placeholder="验证码" required/>
+                    <img id="setYzm" title="看不清,换一张" src="data/03_code_gg.php"/>
+                    <!--<span>验证码不正确</span>-->
+                </li>
+                <li class="agreement">
+                    <i></i>
+                    <sup class=""></sup>
+                    <a href="javascript:;">同意 《M'cake购物协议》</a>
+                </li>
+                <li>
+                    <input type="button" id="btnReg" value="注 册" disabled/>
+                </li>
+            </ul>
+        </div>
+        <!--右-->
+        <a href="login.html">
+            <p><i></i> 我已经注册，<br/>现在就 <b>登录</b></p>
+        </a>
+    </div>
+</div>
+
+<!--页面底部-->
+<footer id="footer"></footer>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/register.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

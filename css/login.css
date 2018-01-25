@@ -1,0 +1,142 @@
+.hide{
+    display:none;
+}
+/*主体*/
+#main{
+    margin:100px 0;
+    padding:0 100px;
+}
+/*左边文字样式*/
+#main .login_text{
+    width:45%;
+    float:left;
+    margin:50px 80px 0 0;
+}
+#main .login_text p{
+    float:right;
+    text-align:left;
+}
+#main .login_text p:first-child{
+    font-size:48px;
+    color:#7b9196;
+}
+#main .login_text p:not(:first-child){
+    width:310px;
+    padding:5px 0;
+}
+#main .login_text p:nth-child(2){
+    font-size:30px;
+    color:#d9e8ec;
+}
+#main .login_text p:last-child{
+    font-size:14px;
+}
+/*右边登录框*/
+/*登录方式*/
+#main .login_list{
+    float:left;
+    width:40%;
+    padding:10px;
+}
+#main .login_list>p{
+    line-height:40px;
+    padding-bottom:10px;
+    border-bottom:1px solid #d6d6d6;
+    width:340px;
+}
+#main .login_list>p span{
+    display:inline-block;
+    color:#767676;
+    line-height:30px;
+    cursor:pointer;
+    font-size:18px;
+    padding:0 34px;
+}
+#main .login_list>p i{
+    display:inline-block;
+    padding:0;
+    border-right:1px solid #bebebe;
+    height:15px;
+    vertical-align:text-bottom;
+}
+#main .login_list>p span.active{
+    font-weight:bold;
+}
+/*登录列表*/
+#main .login_list li{
+    margin:10px;
+    text-align:left;
+    line-height:45px;
+}
+#main .login_list li input{
+    width:215px;
+    padding:5px 5px 5px 45px;
+    height:35px;
+    line-height:35px;
+    background:url(../Images/index/icon.png) no-repeat #f0f0f0;
+    color:#767676;
+    font-size:15px;
+    border:none;
+    border-radius:3px;
+}
+#main .login_list li:first-child input{
+    background-position:-356px -289px;
+}
+#main .login_list li:nth-child(2) input{
+    background-position:-356px -337px;
+}
+#main .login_list li:nth-child(3) input{
+    background-position:-356px -437px;
+    width:100px;
+}
+/*验证码图片*/
+#main .login_list li img{
+    width:112px;
+    height:44px;
+    position:relative;
+    top:-3px;
+    cursor:pointer;
+}
+/*文本框后面提示文字*/
+#main .login_list li span{
+    margin-left:5px;
+}
+/*登录按钮*/
+#main #btnLogin{
+    background:#b0916a;
+    width:160px;
+    padding:0 20px;
+    color:#fff;
+    cursor:pointer;
+    margin-right:5px;
+}
+#main .login_list li.other{
+    line-height:30px;
+    width:275px;
+    border-bottom:1px solid #d6d6d6;
+}
+#main .login_list li.other p{
+    display:inline-block;
+}
+#main .login_list li.other a{
+    font-weight:bold;
+    margin-left:10px;
+}
+#main .login_list li.other img{
+    height:36px;
+    width:30px;
+}
+#main .login_list li.other img:last-child{
+    width:64px;
+}
+#main .login_list li:last-child{
+    border:none;
+}
+/*二维码登录*/
+#main .login_list>div{
+    text-align:left;
+    height:300px;
+}
+#main .login_list>div img{
+    margin:30px 0 40px 0;
+}
